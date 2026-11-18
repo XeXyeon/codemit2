@@ -20,6 +20,7 @@ public class TodoService {
         return TodoResponse.from(savedTodo);
     }
 
+
     public List<TodoResponse> getTodos() {
         return todoRepository.findAll()
                 .stream()
